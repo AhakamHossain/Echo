@@ -1374,10 +1374,11 @@ footer .footerend p{
         position: absolute;
         margin-left: 80%;
         margin-top: 5px;
-        z-index: 105;
+        z-index: 108;
         height: 40px;
         width: 40px;
         opacity: 0;
+        position: fixed;
     }
 
     header .menulines{
@@ -1389,9 +1390,10 @@ footer .footerend p{
         position: absolute;
         margin-left: 80%;
         margin-top: 5px;
-        z-index: 105;
+        z-index: 107;
         justify-content: space-between;
         overflow: hidden;
+        position: fixed;
     }
 
     header .menulines .line{
@@ -1399,13 +1401,13 @@ footer .footerend p{
         height: 2px;
         background-color: black;
         display: block;
-        z-index: 105;
+        z-index: 107;
     }
 
     header input[type="checkbox"]:hover ~ .menulines{
        transform: scale(0.8);
        transition: 0.3s;
-       z-index: 105;
+       z-index: 107;
     }
 
     header .menulines .line1{
@@ -1416,13 +1418,13 @@ footer .footerend p{
 
     header .menulines .line2{
         transition: 0.5s;
-        z-index: 105;
+        z-index: 107;
     }
 
     header .menulines .line3{
         transform-origin: 0% 100%;
         transition: 0.5s;
-        z-index: 105;
+        z-index: 107;
     }
 
     header input[type="checkbox"]:checked ~ .menulines .line1{
