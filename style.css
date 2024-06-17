@@ -1,1 +1,4525 @@
-#
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    box-sizing: border-box;
+}
+
+/*================Heade Start=====================*/
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    margin-top: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    box-sizing: border-box;
+    animation: header 1s ease-in-out;
+}
+
+@keyframes header{
+    0%{
+        opacity: 0;
+    }
+}
+
+header .logo{
+    width: 15%;
+    padding-top: 30px;
+    position: relative;
+}
+
+header nav{
+    padding-top: 30px;
+    font-size: 15px;
+    position: relative;
+    padding-left: 15%;
+    box-sizing: border-box;
+}
+
+/*============Drop down start=============*/
+
+header nav ul i{
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+header nav ul .menu i{
+    font-size: 10px;
+    color: black;
+    padding-left: 50px;
+}
+
+header nav ul {
+    display: flex;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+header nav ul a{
+    text-decoration: none;
+    color: black;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+header nav ul li{
+    list-style: none;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+
+header nav ul .menu {
+    display: none;
+    position: absolute;
+    height: 130px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2) ;
+    color: black;
+}
+
+header nav ul .menu a{
+    color: black;
+}
+
+header nav ul li:hover .menu{
+        display: block;
+}
+    
+header nav ul .menu li:first-child{
+    padding-top: 20px;
+}
+
+header nav ul .menu li{
+    padding-top: 15px;
+}
+
+header nav ul .menu li:hover .submenu{
+    display: block;
+}
+
+header nav ul .menu .submenu{
+    display: none;
+    position: absolute;
+    height: 120px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2) ;
+    margin-left: 175px;
+    margin-top: -30px;
+}
+
+header nav ul .menu .submenu li{
+    padding-top: 15px;
+}
+
+header nav ul button{
+    height: 40px;
+    width: 140px;
+    outline: none;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    background-color: rgb(0, 0, 0);
+    color: orange;
+    border-radius: 50px;
+    box-sizing: border-box;
+    margin-top: -30px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+header nav ul button:hover{
+    background-color: #fff;
+    color: black;
+}
+
+header input[type="checkbox"]{
+    display: none;
+}
+
+/*=================Header End=================*/
+
+/*==================Hero Area Start===============*/
+
+.hero{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    justify-content: center;
+}
+
+.hero .container .textarea{
+    animation: animateherotext 1s ease-in-out;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 50px;
+}
+
+@keyframes animateherotext{
+    0%{
+        transform: translatey(110%);
+    }
+    30%{
+        opacity: 0;
+    }
+}
+
+.hero .container .textarea button:nth-child(1){
+    outline: none;
+    border: 1px solid #FEF0DA;
+    background-color: #FEF0DA;
+    width: 150px;
+    height: 25px;
+    font-size: 12px;
+    color: orange;
+    border-radius: 50px;
+}
+
+.hero .container .textarea h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    width:400px;
+    margin-bottom: 20px;
+    margin-top:10px;
+}
+
+
+.hero .container .textarea P{
+    width: 600px;
+    line-height: 23px;
+    font-size: 15px;
+    margin-bottom: 45px;
+    color: rgba(0, 0, 0, 0.6)
+}
+
+.hero .container .textarea .button {
+    margin: 0;
+    padding: 0;
+}
+
+.hero .container .textarea .button button:nth-child(1){
+    outline: none;
+    border: 1px solid #000000;
+    background-color: #000000;
+    width: 170px;
+    height: 50px;
+    font-size: 17px;
+    color: white;
+    border-radius: 50px;
+    transition:0.3s;
+    margin-right: 20px;
+}
+
+.hero .container .textarea .button button:nth-child(1) a{
+    text-decoration: none;
+    color: white;
+}
+
+.hero .container .textarea .button button:nth-child(1):hover a{
+    text-decoration: none;
+    color: black;
+}
+
+.hero .container .textarea .button button:nth-child(2) a{
+    text-decoration: none;
+    color: black;
+}
+
+.hero .container .textarea .button button:nth-child(2):hover a{
+    text-decoration: none;
+    color: white;
+}
+
+.hero .container .textarea .button button:nth-child(1):hover{
+    background-color: #fff;
+    color: black;
+}
+
+.hero .container .textarea .button button:nth-child(2){
+    outline: none;
+    border: 1px solid #000;
+    background-color: #fff;
+    width: 150px;
+    height: 50px;
+    font-size: 17px;
+    color: black;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.hero .container .textarea .button button:nth-child(2):hover{
+    background-color: #000;
+    color: white;
+}
+
+.hero .container .heroimg{
+    animation: animateheroimg 1s ease-in-out;
+}
+
+@keyframes animateheroimg{
+    0%{
+        transform: translateX(110%);
+    }
+    30%{
+        opacity: 0;
+    }
+}
+
+.hero .container .heroimg img{
+    height: 500px;
+}
+
+/*================ Hero Area End ========================*/
+
+/* ===================Features Area Start ==================== */
+
+.featuresarea{
+    width: 100%;
+    padding-top: 125px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.featuresarea .featureheader{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: featureheader 1s ease-in-out;
+}
+
+@keyframes featureheader{
+    0%{
+        transform: translateY(110%);
+    }
+}
+
+.featuresarea .featureheader button{
+    outline: none;
+    border: 1px solid #FEF0DA;
+    height: 30px;
+    width: 100px;
+    background-color: #FEF0DA;
+    color: orange;
+    font-size: 12px;
+    border-radius: 50px;
+}
+
+.featuresarea .featureheader h1{
+    font-size: 45px;
+    margin-top: 10px;
+    width:400px;
+}
+
+.featuresarea .featureheader p{
+    font-size: 14px;
+    margin-top: 10px;
+    width:580px;
+    text-align: center;
+    line-height: 23px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.featuresarea .allfeatures{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-top: 50px;
+    justify-content: space-evenly;
+    padding-top: 70px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.featuresarea .allfeatures .feature1{
+    animation:feature1 1s ease-in-out ;
+}
+
+@keyframes feature1{
+    0%{
+        transform: translateY(110%);
+    }
+}
+
+.featuresarea .allfeatures .feature2{
+    animation:feature2 1s ease-in-out ;
+}
+
+@keyframes feature2{
+    0%{
+        transform: translateY(200%);
+    }
+}
+
+.featuresarea .allfeatures .feature3{
+    animation:feature3 1s ease-in-out ;
+}
+
+@keyframes feature3{
+    0%{
+        transform: translateY(300%);
+    }
+}
+
+.featuresarea .allfeatures .feature .icon i{
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.featuresarea .allfeatures .feature .icon{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.featuresarea .allfeatures .feature .iconbg{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 50%;
+    left: 140px;
+    bottom: 12px;
+    opacity: 0.5;
+}
+
+.featuresarea .allfeatures .feature h2{
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.featuresarea .allfeatures .feature p{
+    font-size: 14px;
+    padding-top: 15px;
+    width: 300px;
+    line-height: 23px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/*=============== Feature Area End ==================*/
+
+/*================= About Us Aea Start ===================== */
+
+
+.aboutus{
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutus .container{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.aboutus .container .aboutusimg {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 50px;
+}
+
+.aboutus .container .aboutusimg img{
+    height:450px;
+    padding-left: 0;
+    padding-right: 10px;
+    padding-bottom: 50px;
+    animation: aboutusimg 1s ease-in-out;
+}
+
+@keyframes aboutusimg{
+    0%{
+        transform: translateY(110%);
+    }
+}
+
+.aboutus .container .aboutustext{
+    height:450px;
+    margin-left: 50px;
+    padding-right: 0;
+    padding-bottom: 50px;
+    animation: aboutustext 1s ease-in-out;
+}
+
+@keyframes aboutustext{
+    0%{
+        transform: translateY(110%);
+    }
+}
+
+.aboutus .container .aboutustext button:nth-child(1){
+    font-size: 12px;
+    height: 24px;
+    width: 90px;
+    border-radius: 50px;
+    outline:none;
+    border: 1px solid #FEF0DA;
+    background-color: #FEF0DA;
+    color: orange;
+}
+
+.aboutus .container .aboutustext h1{
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.aboutus .container .aboutustext p{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 450px;
+    line-height:22px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.aboutus .container .aboutustext ul{
+    padding-left: 25px;
+    padding-bottom: 50px;
+}
+
+.aboutus .container .aboutustext li{
+    list-style: none;
+    list-style-type: '✔   ';
+    font-size: 15px;
+    line-height:22px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.aboutus .container .aboutustext button:nth-child(5) a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.aboutus .container .aboutustext button:nth-child(5):hover a{
+    text-decoration: none;
+    color: #000;
+}
+
+.aboutus .container .aboutustext button:nth-child(5){
+    font-size: 18px;
+    height: 50px;
+    width: 130px;
+    border-radius: 50px;
+    outline:none;
+    border: 1px solid #000;
+    background-color: #000;
+    color: white;
+    transition: 0.3s;
+}
+
+.aboutus .container .aboutustext button:nth-child(5):hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/*===================about US Area End=================*/
+
+/*==============Service Area Start================*/
+
+.servicearea{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top:50px;
+    padding-bottom: 150px;
+}
+
+.servicearea .serviceheader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: animate 1s ease-in-out;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(500px);
+    }
+}
+
+.servicearea .serviceheader button{
+    height: 25px;
+    width: 100px;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid #FEF0DA;
+    background-color: #FEF0DA;
+    color: orange;
+    font-size: 10px; 
+}
+
+.servicearea .serviceheader h1{
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.servicearea .container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 100px;
+    column-gap: 30px;
+    overflow: hidden;
+}
+
+.servicearea .container .column .service{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #EFEFEF;
+    height: 200px;
+    width: 450px;
+    align-items: center;
+    position: relative;
+    margin-top:30px
+}
+
+.servicearea .container .column1{
+    animation: animate 1s ease-in-out;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(110%);
+    }
+}
+
+.servicearea .container .column2{
+    animation: animate 1.3s ease-in-out;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(110%);
+    }
+}
+
+.servicearea .container .column .service .serviceicon{
+    padding-right: 10px;
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+
+.servicearea .container .column .service .serviceicon i{
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.servicearea .container .column .service .serviceicon .iconbg{
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    position: absolute;
+    border-radius: 50%;
+    top: -23px;
+    opacity:0.5;
+}
+
+.servicearea .container .column .service .servicetext {
+    margin-left: 50px;
+}
+
+.servicearea .container .column .service .servicetext h3{
+    font-size: 16px ;
+    padding-bottom: 10px;
+}
+
+.servicearea .container .column .service .servicetext p{
+    font-size: 14px ;
+    line-height: 21px;
+    width: 280px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/*==================Service Area End===========*/
+
+/*===============Testimonial Area Start===========*/
+
+.testimonial{
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+    background-color: #F8F9FA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial .testimonialheader{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: animate 1s ease-in-out;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(200%);
+    }
+}
+
+.testimonial .testimonialheader button{
+    width: 120px;
+    height: 25px;
+    font-size: 12px;
+    color: orange;
+    outline:none;
+    border: 1px solid #FEF0DA;
+    background-color: #FEF0DA;
+    border-radius: 50px;
+}
+
+.testimonial .testimonialheader h1{
+    font-size: 40px;
+    margin-top:10px;
+    margin-bottom: 15px;
+}
+
+.testimonial .testimonialheader p{
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+    width: 900px;
+    color:rgba(0, 0, 0, 0.6)
+}
+
+.testimonial .container {
+    display: flex;
+    overflow: hidden;
+    width: 1295px;
+    animation: animate 1s ease-in-out;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(200%);
+    }
+}
+
+.testimonial .container .allperson{
+    display: flex;
+    animation: slide 30s infinite alternate; 
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    12%{
+        transform: translateX(0);
+    }
+    15%{
+        transform: translateX(-430px);
+    }
+    27%{
+        transform: translateX(-430px);
+    }
+    30%{
+        transform: translateX(-860px);
+    }
+    42%{
+        transform: translateX(-860px);
+    }
+    45%{
+        transform: translateX(-1290px);
+    }
+    57%{
+        transform: translateX(-1290px);
+    }
+    61%{
+        transform: translateX(-1710px);
+    }
+    73%{
+        transform: translateX(-1710px);
+    }
+    75%{
+        transform: translateX(-2130px);
+    }
+    87%{
+        transform: translateX(-2130px);
+    }
+    89%{
+        transform: translateX(-2570px);
+    }
+    100%{
+        transform: translateX(-2570px);
+    }
+
+}
+
+.testimonial .container .allperson .person{
+    margin-left: 10px;
+    width: 417px;
+    height: 272px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.testimonial .container .allperson .person:hover{
+    border: 1px solid black;
+}
+
+.testimonial .container .allperson .person .persontext{
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.testimonial .container .allperson .person .persontext p{
+    width:350px ;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.testimonial .container .allperson .person .persondetails{
+    display: flex;
+    padding-left: 30px;
+    padding-top: 40px;
+}
+
+.testimonial .container .allperson .person .persondetails .personimg{
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.testimonial .container .allperson .person .persondetails .personimg img{
+    height: 40px;
+}
+
+.testimonial .container .allperson .person .persondetails .personname p{
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 22px;
+}
+
+
+.testimonial .container input{
+    position:absolute ;
+    margin-top: 300px;
+    margin-left: 600px;
+    accent-color: black;
+}
+
+.testimonial .container input:nth-child(2){
+    position:absolute ;
+    margin-left: 640px;
+}
+
+.testimonial .container input:nth-child(3){
+    position:absolute ;
+    margin-left: 680px;
+}
+
+.testimonial .container #slide1:checked ~ .allperson{
+    transform: translateX(0);
+    transition: 0.5s;
+}
+
+.testimonial .container #slide2:checked ~ .allperson{
+    transform: translateX(-1290px);
+    transition: 0.5s;
+}
+
+.testimonial .container #slide3:checked ~ .allperson{
+    transform: translateX(-2570px);
+    transition: 0.5s;
+}
+
+/*============Testimonial Area End===============*/
+
+/*===================Fotter Area Start==============*/
+
+footer{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+footer .container{
+    display: flex;
+    flex-wrap:wrap;
+    padding-top: 100px;
+}
+
+footer .container .footer h5{
+    margin-bottom: 30px;
+}
+
+footer .container .footer{
+    padding-left: 100px;
+}
+
+footer .container .footer1 p{
+    font-size: 14px;
+    line-height: 25px;
+    width: 430px;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+footer .container .footer1 .footericon a{
+    text-decoration: none;
+    color: black;
+}
+
+footer .container .footer1 .footericon i{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+footer .container .footer ul{
+    font-size: 14px;
+    line-height: 35px;
+    list-style: none;
+}
+
+footer .container .footer ul li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+footer .container .footer ul li a:hover{
+    transition: 0.3s;
+    color: black;
+}
+
+footer .container .footer ul li i{
+    padding-right: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+footer .footerend {
+    position: absolute;
+    bottom: 150px;
+}
+
+footer .footerend a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+footer .footerend a:hover{
+    transition: 0.3s;
+    color: blue;
+}
+
+footer .footerend p{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+}
+
+
+/*================Footer Area End============*/
+
+
+
+
+/*===================Responsive For 1280 px Start============*/
+
+@media (max-width: 1280px){
+    
+
+        
+    /*==================Hero Area Start===============*/
+
+    .hero .container .textarea P{
+        width: 500px;
+        line-height: 23px;
+        font-size: 15px;
+        margin-bottom: 45px;
+        color: rgba(0, 0, 0, 0.6)
+    }
+
+    .hero .container .heroimg img{
+        height: 400px;
+    }
+
+    /*================ Hero Area End ========================*/
+
+
+
+    /*================= About Us Aea Start ===================== */
+
+    .aboutus .container .aboutusimg {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 50px;
+    }
+
+    .aboutus .container .aboutusimg img{
+        height:400px;
+        padding-left: 0;
+        padding-right: 10px;
+        padding-bottom: 50px;
+    }
+    .aboutus .container .aboutustext p{
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        width: 400px;
+        line-height:22px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    /*===================about US Area End=================*/
+
+    /*===============Testimonial Area Start===========*/
+
+    .testimonial .testimonialheader p{
+        width: 600px;
+    }
+
+    .testimonial .container {
+        display: flex;
+        overflow: hidden;
+        width: 860px;
+    }
+
+    .testimonial .container .allperson .person:hover{
+        border: 1px solid black;
+    }
+
+    .testimonial .container .allperson .person .persontext{
+        padding-top: 50px;
+        padding-left: 30px;
+    }
+
+    .testimonial .container .allperson .person .persontext p{
+        width:350px ;
+        font-size: 18px;
+        line-height: 27px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .testimonial .container .allperson .person .persondetails{
+        display: flex;
+        padding-left: 30px;
+        padding-top: 40px;
+    }
+
+    .testimonial .container .allperson .person .persondetails .personimg{
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 20px;
+    }
+
+    .testimonial .container .allperson .person .persondetails .personimg img{
+        height: 40px;
+    }
+
+    .testimonial .container .allperson .person .persondetails .personname p{
+        color: rgba(0, 0, 0, 0.6);
+        line-height: 22px;
+    }
+
+
+    .testimonial .container input{
+        position:absolute ;
+        margin-top: 300px;
+        margin-left: 380px;
+        accent-color: black;
+    }
+
+    .testimonial .container input:nth-child(2){
+        position:absolute ;
+        margin-left: 425px;
+    }
+
+    .testimonial .container input:nth-child(3){
+        position:absolute ;
+        margin-left: 470px;
+    }
+
+    /*============Testimonial Area End===============*/
+
+
+    /*===================Fotter Area Start==============*/
+
+    footer .container .footer{
+        padding-left: 50px;
+    }
+
+    footer .container .footer1 p{
+        width: 350px;
+    }
+
+    /*===================Fotter Area End==============*/
+
+
+}
+
+/*===================Responsive For 1280 px End============*/
+
+
+
+
+
+/*===================Responsive For 1024 px Start============*/
+
+@media (max-width: 1024px){
+
+
+
+    header .logo{
+        width: 0%;
+    }
+
+    /*==================Hero Area Start===============*/
+
+
+    .hero .container .textarea h1{
+        width: 300px;
+    }
+    
+    .hero .container .textarea P{
+        width: 400px;
+        line-height: 23px;
+        font-size: 15px;
+        margin-bottom: 45px;
+        color: rgba(0, 0, 0, 0.6)
+    }
+    
+    .hero .container .heroimg img{
+        height: 350px;
+    }
+    
+    /*================ Hero Area End ========================*/
+
+        
+
+    /* ===================Features Area Start ==================== */
+
+    .featuresarea .featureheader h1{
+        font-size: 40px;
+    }
+
+    .featuresarea .featureheader p{
+        width:500px;
+    }
+
+    .featuresarea .allfeatures .feature .icon .iconbg{
+        left: 90px;
+    }
+
+    .featuresarea .allfeatures .feature h2{
+        font-size: 18px;
+    }
+
+    .featuresarea .allfeatures .feature p{
+        width: 200px;
+    }
+
+    /*=============== Feature Area End ==================*/
+
+    /*================= About Us Aea Start ==================== */
+
+    
+    .aboutus{
+    width: 100%;
+    padding-bottom: 0px;
+    }
+
+
+    .aboutus .container{
+        padding-bottom: 200px;
+    }
+    
+    .aboutus .container .aboutusimg {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 50px;
+    }
+    
+    .aboutus .container .aboutusimg img{
+        height:350px;
+        padding-left: 0;
+        padding-right: 10px;
+        padding-bottom: 50px;
+    }
+    .aboutus .container .aboutustext p{
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        width: 300px;
+        line-height:22px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+    
+    
+    /*===================about US Area End=================*/
+
+        
+    /*==============Service Area Start================*/
+
+    .servicearea{
+        padding-top:10px;
+        padding-bottom: 100px;
+    }
+
+    .servicearea .container{
+        padding-top: 40px;
+        column-gap: 20px;
+        padding-bottom: 50px;
+    }
+
+    .servicearea .container .column .service{
+        height: 250px;
+        width: 300px;
+    }
+
+    .servicearea .container .column .service .serviceicon{
+        padding-right: 0px;
+        position: relative;
+        top: -20px;
+        left: 15px;
+    }
+
+    .servicearea .container .column .service .servicetext {
+        margin-left: 35px;
+    }
+
+    .servicearea .container .column .service .servicetext h3{
+        width: 100px;
+    }
+
+    .servicearea .container .column .service .servicetext p{
+        width: 150px;
+    }
+
+    /*==================Service Area End===========*/
+
+
+        
+
+        
+        
+    /*===================Fotter Area Start==============*/
+    
+    footer .container .footer{
+        padding-left: 50px;
+    }
+    
+    footer .container .footer1 p{
+        width: 200px;
+    }
+
+    footer .footerend{
+        bottom: 70px;
+    }
+
+    /*===================Fotter Area End==============*/
+    
+
+}
+    
+/*===================Responsive For 1024 px End============*/
+
+
+
+
+/*===================Responsive For 991 px Start============*/
+
+@media (max-width: 991px){
+
+    /*================Heade Start=====================*/
+
+
+    header{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        margin-top: 20px;
+        box-sizing: border-box;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    header .logo{
+        width: 0%;
+        padding-top: 30px;
+        margin-left: -65%;
+        padding-left: 0;
+        position: relative;
+    }
+    
+    header nav{
+        margin-top: -20px;
+        padding-top: 50px;
+        font-size: 15px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-left: 200%;
+        position: absolute;
+        box-sizing: border-box;
+        box-shadow: -5px -5px 10px 5px rgba(0, 0, 0, 0.3);
+        height: 100vh;
+        position: fixed;
+        background-color: white;
+        transition: 0.5s;
+    }
+    
+    /*============Drop down start=============*/
+    
+    header nav ul i{
+        font-size: 10px;
+    }
+    
+    header nav ul .menu i{
+        font-size: 10px;
+        color: black;
+        padding-left: 50px;
+    }
+    
+    header nav ul {
+        display: block;
+    }
+    
+    header nav ul a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    header nav ul li{
+        list-style: none;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 20px;
+        cursor: pointer;
+    }
+    
+    
+    header nav ul .menu {
+        display: none;
+        position: relative;
+        height: 250px;
+        width: auto;
+        background-color: transparent;
+        box-shadow: none ;
+        color: black;
+    }
+    
+    header nav ul .menu a{
+        color: black;
+    }
+
+    header nav ul .menu li:first-child{
+        padding-top: 20px;
+    }
+    
+    header nav ul .menu .submenu{
+        display: none;
+        position: relative;
+        height: 120px;
+        width: 150px;
+        background-color: transparent;
+        box-shadow: none;
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+
+    header nav ul button{
+        margin-top: 20px;
+    }
+
+    header input[type="checkbox"]{
+        display: block;
+    }
+
+    header input[type="checkbox"]{
+        position: absolute;
+        margin-left: 80%;
+        margin-top: 5px;
+        z-index: 5;
+        height: 40px;
+        width: 40px;
+        opacity: 0;
+    }
+
+    header .menulines{
+        display: flex;
+        flex-direction: column;
+        height: 30px;
+        width: 30px;
+        background-color: transparent;
+        position: absolute;
+        margin-left: 80%;
+        margin-top: 5px;
+        z-index: 1;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+    header .menulines .line{
+        width: 60px;
+        height: 2px;
+        background-color: black;
+        display: block;
+    }
+
+    header input[type="checkbox"]:hover ~ .menulines{
+       transform: scale(0.8);
+       transition: 0.3s;
+    }
+
+    header .menulines .line1{
+        transform-origin: 0% 0%;
+        transition: 0.5s;
+    }
+
+    header .menulines .line2{
+        transition: 0.5s;
+    }
+
+    header .menulines .line3{
+        transform-origin: 0% 100%;
+        transition: 0.5s;
+    }
+
+    header input[type="checkbox"]:checked ~ .menulines .line1{
+        transform: rotate(45deg);
+        transition: 0.5s;
+    }
+
+    header input[type="checkbox"]:checked ~ .menulines .line2{
+        opacity: 0;
+    }
+
+    header input[type="checkbox"]:checked ~ .menulines .line3{
+        transform: rotate(-45deg);
+    }
+
+    header input[type="checkbox"]:checked ~ nav{
+        margin-left: 55%;
+    }
+
+    /*================Heade end=====================*/
+
+        
+    /*==================Hero Area Start===============*/
+
+    .hero{
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 80px;
+        justify-content: center;
+    }
+
+    .hero .container .textarea h1{
+        font-size: 1.7rem;
+        font-weight: bold;
+        width:100%;
+        margin-bottom: 20px;
+        margin-top:10px;
+    }
+
+
+    .hero .container .textarea P{
+        width: 600px;
+        line-height: 23px;
+        font-size: 15px;
+        margin-bottom: 45px;
+        color: rgba(0, 0, 0, 0.6)
+    }
+    .hero .container .heroimg img{
+        height: 400px;
+    }
+
+    /*================ Hero Area End ========================*/
+
+    
+    /* ===================Features Area Start ==================== */
+
+    .featuresarea{
+        width: 100%;
+        padding-top: 125px;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .featuresarea .allfeatures{
+        display: block;
+        overflow: hidden;
+    }
+
+    .featuresarea .allfeatures .feature .iconbg{
+        position: absolute;
+        background-color: orange;
+        margin-left: -80px;
+        bottom: 12px;
+        opacity: 0.5;
+    }
+
+    .featuresarea .allfeatures .feature p{
+        width: 500px;
+    }
+
+    .featuresarea .allfeatures .feature{
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+
+    /*=============== Feature Area End ==================*/
+
+    
+    /*================= About Us Aea Start ===================== */
+
+
+    .aboutus{
+        width: 100%;
+        padding-top: 200px;
+        padding-bottom: 100px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+
+    .aboutus .container{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+
+    .aboutus .container .aboutusimg {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 30px;
+    }
+
+    .aboutus .container .aboutusimg img{
+        height:350px;
+        padding-left: 0;
+        padding-right: 10px;
+        padding-bottom: 50px;
+    }
+ 
+    .aboutus .container .aboutustext h1{
+        font-size: 30px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .aboutus .container .aboutustext p{
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        width: 500px;
+        line-height:22px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+
+    /*===================about US Area End=================*/
+
+
+    /*==============Service Area Start================*/
+
+    .servicearea{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 150px;
+    }
+
+    .servicearea .serviceheader{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .servicearea .serviceheader h1{
+        font-size: 35px;
+        margin-top: 10px;
+    }
+
+    .servicearea .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+        column-gap: 30px;
+        overflow: hidden;
+    }
+
+    .servicearea .container .column .service{
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #EFEFEF;
+        height: 150px;
+        width:700px;
+        align-items: center;
+        position: relative;
+        margin-top:30px
+    }
+
+    .servicearea .container .column .service .serviceicon{
+        padding-right: 10px;
+        position: relative;
+        top: 0px;
+        left: 20px;
+    }
+
+    .servicearea .container .column .service .serviceicon i{
+        font-size: 50px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .servicearea .container .column .service .serviceicon .iconbg{
+        width: 50px;
+        height: 50px;
+        background-color: orange;
+        position: absolute;
+        border-radius: 50%;
+        top: -23px;
+        opacity:0.5;
+    }
+
+    .servicearea .container .column .service .servicetext {
+        margin-left: 50px;
+    }
+
+    .servicearea .container .column .service .servicetext h3{
+        font-size: 16px ;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+
+    .servicearea .container .column .service .servicetext p{
+        font-size: 14px ;
+        line-height: 21px;
+        width: 80%;
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+    /*==================Service Area End===========*/
+
+
+        
+    /*===============Testimonial Area Start===========*/
+
+    .testimonial{
+        width: 100%;
+        height: 830px;
+        overflow: hidden;
+        background-color: #F8F9FA;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial .testimonialheader{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        animation: animate 1s ease-in-out;
+    }
+
+    @keyframes animate{
+        0%{
+            transform: translateY(200%);
+        }
+    }
+
+    .testimonial .testimonialheader button{
+        width: 120px;
+        height: 25px;
+        font-size: 12px;
+        color: orange;
+        outline:none;
+        border: 1px solid #FEF0DA;
+        background-color: #FEF0DA;
+        border-radius: 50px;
+    }
+
+    .testimonial .testimonialheader h1{
+        font-size: 35px;
+        margin-top:10px;
+        margin-bottom: 15px;
+    }
+
+    .testimonial .testimonialheader p{
+        text-align: center;
+        font-size: 14px;
+        line-height: 21px;
+        width: 600px;
+        color:rgba(0, 0, 0, 0.6)
+    }
+
+    .testimonial .container {
+        display: flex;
+        overflow: hidden;
+        padding-bottom:50px;
+        width: 730px;
+        animation: animate 1s ease-in-out;
+    }
+
+    @keyframes animate{
+        0%{
+            transform: translateY(200%);
+        }
+    }
+
+    .testimonial .container .allperson{
+        display: flex;
+        animation: slide 30s infinite alternate; 
+    }
+
+    @keyframes slide{
+        0%{
+            transform: translateX(0);
+        }
+        12%{
+            transform: translateX(0);
+        }
+        15%{
+            transform: translateX(-360px);
+        }
+        27%{
+            transform: translateX(-360px);
+        }
+        30%{
+            transform: translateX(-720px);
+        }
+        42%{
+            transform: translateX(-720px);
+        }
+        45%{
+            transform: translateX(-1080px);
+        }
+        57%{
+            transform: translateX(-1080px);
+        }
+        61%{
+            transform: translateX(-1440px);
+        }
+        73%{
+            transform: translateX(-1440px);
+        }
+        75%{
+            transform: translateX(-1800px);
+        }
+        87%{
+            transform: translateX(-1800px);
+        }
+        89%{
+            transform: translateX(-2160px);
+        }
+        100%{
+            transform: translateX(-2160px);
+        }
+
+    }
+
+    .testimonial .container .allperson .person{
+        margin-left: 10px;
+        width: 350px;
+        height: 350px;
+        background-color: #fff;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        transition: 0.3s;
+    }
+
+    .testimonial .container .allperson .person:hover{
+        border: 1px solid black;
+    }
+
+    .testimonial .container .allperson .person .persontext{
+        padding-top: 50px;
+        padding-left: 30px;
+    }
+
+    .testimonial .container .allperson .person .persontext p{
+        width:85% ;
+        font-size: 17px;
+        line-height: 27px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .testimonial .container .allperson .person .persondetails{
+        display: flex;
+        padding-left: 30px;
+        padding-top: 40px;
+    }
+
+    .testimonial .container .allperson .person .persondetails .personimg{
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 20px;
+    }
+
+    .testimonial .container .allperson .person .persondetails .personimg img{
+        height: 40px;
+    }
+
+    .testimonial .container .allperson .person .persondetails .personname p{
+        color: rgba(0, 0, 0, 0.6);
+        line-height: 22px;
+    }
+
+
+    .testimonial .container input{
+        position:absolute ;
+        margin-top: 380px;
+        margin-left: 320px;
+        accent-color: black;
+    }
+
+    .testimonial .container input:nth-child(2){
+        position:absolute ;
+        margin-left: 360px;
+    }
+
+    .testimonial .container input:nth-child(3){
+        position:absolute ;
+        margin-left: 400px;
+    }
+
+    .testimonial .container #slide1:checked ~ .allperson{
+        transform: translateX(0);
+        transition: 0.5s;
+    }
+
+    .testimonial .container #slide2:checked ~ .allperson{
+        transform: translateX(-1290px);
+        transition: 0.5s;
+    }
+
+    .testimonial .container #slide3:checked ~ .allperson{
+        transform: translateX(-2570px);
+        transition: 0.5s;
+    }
+
+    /*============Testimonial Area End===============*/
+
+        
+    /*===================Fotter Area Start==============*/
+
+    footer{
+        width: 100%;
+        height: 750px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    footer .container{
+        display: flex;
+        flex-wrap:wrap;
+        padding-top: 100px;
+    }
+
+    footer .container .footer h5{
+        margin-bottom: 30px;
+    }
+
+    footer .container .footer{
+        padding-left: 100px;
+        width: 50%;
+        padding-top: 50px;
+    }
+
+    footer .container .footer1 p{
+        font-size: 14px;
+        line-height: 25px;
+        width: 350px;
+        margin-bottom: 10px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    footer .container .footer1 .footericon a{
+        text-decoration: none;
+        color: black;
+    }
+
+    footer .container .footer1 .footericon i{
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        padding-left: 10px;
+        margin-top: 20px;
+    }
+
+
+    footer .container .footer ul{
+        font-size: 14px;
+        line-height: 35px;
+        list-style: none;
+    }
+
+    footer .container .footer ul li a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    footer .container .footer ul li a:hover{
+        transition: 0.3s;
+        color: black;
+    }
+
+    footer .container .footer ul li i{
+        padding-right: 15px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    footer .footerend {
+        position: absolute;
+        bottom: 100px;
+    }
+
+    footer .footerend a{
+        text-decoration: none;
+        color: red;
+        font-weight: bold;
+    }
+
+    footer .footerend a:hover{
+        transition: 0.3s;
+        color: blue;
+    }
+
+    footer .footerend p{
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 14px;
+    }
+
+
+    /*================Footer Area End============*/
+
+
+}
+
+/*===================Responsive For 991 px End============*/
+
+
+/*===================Responsive For 768 px Start============*/
+
+@media (max-width: 768px){
+
+    
+    .aboutus{
+        width: 100%;
+        padding-top: 200px;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+
+    
+    /*==============Service Area Start================*/
+
+    .servicearea .container .column .service{
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #EFEFEF;
+        height: 150px;
+        width: 500px;
+        align-items: center;
+        position: relative;
+        margin-top:30px
+    }
+
+    /*==================Service Area End===========*/
+
+
+        
+    /*===============Testimonial Area Start===========*/
+
+    .testimonial{
+        width: 100%;
+        height: 930px;
+        overflow: hidden;
+        background-color: #F8F9FA;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial .testimonialheader{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        animation: animate 1s ease-in-out;
+    }
+
+    @keyframes animate{
+        0%{
+            transform: translateY(200%);
+        }
+    }
+
+    .testimonial .testimonialheader button{
+        width: 120px;
+        height: 25px;
+        font-size: 12px;
+        color: orange;
+        outline:none;
+        border: 1px solid #FEF0DA;
+        background-color: #FEF0DA;
+        border-radius: 50px;
+    }
+
+    .testimonial .testimonialheader h1{
+        font-size: 30px;
+        margin-top:10px;
+        margin-bottom: 15px;
+    }
+
+    .testimonial .testimonialheader p{
+        text-align: center;
+        font-size: 14px;
+        line-height: 21px;
+        width: 400px;
+        color:rgba(0, 0, 0, 0.6)
+    }
+
+    .testimonial .container {
+        display: flex;
+        overflow: hidden;
+        padding-bottom:50px;
+        width: 530px;
+        animation: animate 1s ease-in-out;
+    }
+
+    @keyframes animate{
+        0%{
+            transform: translateY(200%);
+        }
+    }
+
+    .testimonial .container .allperson{
+        display: flex;
+        animation: slide 30s infinite alternate; 
+    }
+
+    @keyframes slide{
+        0%{
+            transform: translateX(0);
+        }
+        12%{
+            transform: translateX(0);
+        }
+        15%{
+            transform: translateX(-260px);
+        }
+        27%{
+            transform: translateX(-260px);
+        }
+        30%{
+            transform: translateX(-520px);
+        }
+        42%{
+            transform: translateX(-520px);
+        }
+        45%{
+            transform: translateX(-780px);
+        }
+        57%{
+            transform: translateX(-780px);
+        }
+        61%{
+            transform: translateX(-1040px);
+        }
+        73%{
+            transform: translateX(-1040px);
+        }
+        75%{
+            transform: translateX(-1300px);
+        }
+        87%{
+            transform: translateX(-1300px);
+        }
+        89%{
+            transform: translateX(-1560px);
+        }
+        100%{
+            transform: translateX(-1560px);
+        }
+
+    }
+
+    .testimonial .container .allperson .person{
+        margin-left: 10px;
+        width: 250px;
+        height: 450px;
+        background-color: #fff;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        transition: 0.3s;
+    }
+
+    .testimonial .container .allperson .person:hover{
+        border: 1px solid black;
+    }
+
+    .testimonial .container .allperson .person .persontext{
+        padding-top: 50px;
+        padding-left: 30px;
+    }
+
+    .testimonial .container .allperson .person .persontext p{
+        width:70% ;
+        font-size: 17px;
+        line-height: 27px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .testimonial .container .allperson .person .persondetails{
+        display: flex;
+        padding-left: 30px;
+        padding-top: 40px;
+    }
+
+    .testimonial .container .allperson .person .persondetails .personimg{
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 20px;
+    }
+
+    .testimonial .container .allperson .person .persondetails .personimg img{
+        height: 40px;
+    }
+
+    .testimonial .container .allperson .person .persondetails .personname p{
+        color: rgba(0, 0, 0, 0.6);
+        line-height: 22px;
+        width: 80%;
+    }
+
+
+    .testimonial .container input{
+        position:absolute ;
+        margin-top: 490px;
+        margin-left: 220px;
+        accent-color: black;
+    }
+
+    .testimonial .container input:nth-child(2){
+        position:absolute ;
+        margin-left: 260px;
+    }
+
+    .testimonial .container input:nth-child(3){
+        position:absolute ;
+        margin-left: 300px;
+    }
+
+    .testimonial .container #slide1:checked ~ .allperson{
+        transform: translateX(0);
+        transition: 0.5s;
+    }
+
+    .testimonial .container #slide2:checked ~ .allperson{
+        transform: translateX(-1290px);
+        transition: 0.5s;
+    }
+
+    .testimonial .container #slide3:checked ~ .allperson{
+        transform: translateX(-2570px);
+        transition: 0.5s;
+    }
+
+    /*============Testimonial Area End===============*/
+
+        
+    /*===================Fotter Area Start==============*/
+
+    footer{
+        width: 100%;
+        height: 1150px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    footer .container{
+        display: flex;
+        flex-wrap:wrap;
+        padding-top: 100px;
+    }
+
+    footer .container .footer h5{
+        margin-bottom: 30px;
+    }
+
+    footer .container .footer{
+        padding-left: 100px;
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    footer .container .footer1 p{
+        font-size: 14px;
+        line-height: 25px;
+        width: 350px;
+        margin-bottom: 10px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    footer .container .footer1 .footericon a{
+        text-decoration: none;
+        color: black;
+    }
+
+    footer .container .footer1 .footericon i{
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        padding-left: 10px;
+        margin-top: 20px;
+    }
+
+
+    footer .container .footer ul{
+        font-size: 14px;
+        line-height: 35px;
+        list-style: none;
+    }
+
+    footer .container .footer ul li a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    footer .container .footer ul li a:hover{
+        transition: 0.3s;
+        color: black;
+    }
+
+    footer .container .footer ul li i{
+        padding-right: 15px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    footer .footerend {
+        position: absolute;
+        bottom: 100px;
+        justify-content: center;
+        display: flex;
+    }
+
+    footer .footerend a{
+        text-decoration: none;
+        color: red;
+        font-weight: bold;
+    }
+
+    footer .footerend a:hover{
+        transition: 0.3s;
+        color: blue;
+    }
+
+    footer .footerend p{
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 14px;
+        line-height: 25px;
+        width: 80%;
+    }
+
+
+    /*================Footer Area End============*/
+
+}
+
+/*===================Responsive For 768 px End============*/
+
+
+
+@media (max-width: 668px){
+
+    
+    /*==================Hero Area Start===============*/
+
+    .hero{
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 80px;
+        justify-content: center;
+    }
+
+    .hero .container .textarea h1{
+        font-size: 1.5rem;
+        font-weight: bold;
+        width:60%;
+        margin-bottom: 20px;
+        margin-top:10px;
+    }
+
+
+    .hero .container .textarea P{
+        width: 400px;
+        line-height: 23px;
+        font-size: 15px;
+        margin-bottom: 45px;
+        color: rgba(0, 0, 0, 0.6)
+    }
+    .hero .container .heroimg img{
+        height: 300px;
+    }
+}
+
+    /*================ Hero Area End ========================*/
+
+
+
+
+
+/*===================Responsive For 568 px Start============*/
+
+@media (max-width: 568px){
+
+    
+    /*==================Hero Area Start===============*/
+
+    .hero{
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 80px;
+        justify-content: center;
+    }
+
+    .hero .container .textarea h1{
+        font-size: 1.5rem;
+        font-weight: bold;
+        width:60%;
+        margin-bottom: 20px;
+        margin-top:10px;
+    }
+
+
+    .hero .container .textarea P{
+        width: 400px;
+        line-height: 23px;
+        font-size: 15px;
+        margin-bottom: 45px;
+        color: rgba(0, 0, 0, 0.6)
+    }
+    .hero .container .heroimg img{
+        height: 300px;
+    }
+
+    /*================ Hero Area End ========================*/
+
+    
+    /* ===================Features Area Start ==================== */
+
+    .featuresarea{
+        width: 100%;
+        padding-top: 125px;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .featuresarea .featureheader h1{
+        font-size: 2rem;
+    }
+
+    .featuresarea .featureheader p{
+        width: 70%;
+    }
+
+    .featuresarea .allfeatures{
+        display: block;
+        overflow: hidden;
+    }
+
+    .featuresarea .allfeatures .feature .iconbg{
+        position: absolute;
+        background-color: orange;
+        margin-left: -80px;
+        bottom: 12px;
+        opacity: 0.5;
+    }
+
+    .featuresarea .allfeatures .feature p{
+        width: 70%;
+    }
+
+    .featuresarea .allfeatures .feature{
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+
+    /*=============== Feature Area End ==================*/
+
+    
+    /*================= About Us Aea Start ===================== */
+
+
+    .aboutus{
+        width: 100%;
+        padding-top: 200px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+
+    .aboutus .container{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+
+    .aboutus .container .aboutusimg {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 30px;
+    }
+
+    .aboutus .container .aboutusimg img{
+        height:250px;
+        padding-left: 0;
+        padding-right: 10px;
+        padding-bottom: 50px;
+    }
+ 
+    .aboutus .container .aboutustext h1{
+        font-size: 30px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .aboutus .container{
+        margin-left: -10%;
+    }
+
+    .aboutus .container .aboutustext p{
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        width: 400px;
+        line-height:22px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+
+    /*===================about US Area End=================*/
+
+
+    /*==============Service Area Start================*/
+
+    .servicearea{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 150px;
+    }
+
+    .servicearea .serviceheader{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .servicearea .serviceheader h1{
+        font-size: 35px;
+        margin-top: 10px;
+    }
+
+    .servicearea .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+        column-gap: 30px;
+        overflow: hidden;
+    }
+
+    .servicearea .container .column .service{
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #EFEFEF;
+        height: 200px;
+        width: 400px;
+        align-items: center;
+        position: relative;
+        margin-top:30px
+    }
+
+    .servicearea .container .column .service .serviceicon{
+        padding-right: 10px;
+        position: relative;
+        top: 0px;
+        left: 20px;
+    }
+
+    .servicearea .container .column .service .serviceicon i{
+        font-size: 50px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .servicearea .container .column .service .serviceicon .iconbg{
+        width: 50px;
+        height: 50px;
+        background-color: orange;
+        position: absolute;
+        border-radius: 50%;
+        top: -23px;
+        opacity:0.5;
+    }
+
+    .servicearea .container .column .service .servicetext {
+        margin-left: 50px;
+    }
+
+    .servicearea .container .column .service .servicetext h3{
+        font-size: 16px ;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+
+    .servicearea .container .column .service .servicetext p{
+        font-size: 14px ;
+        line-height: 21px;
+        width: 80%;
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+    /*==================Service Area End===========*/
+
+
+        
+    /*===============Testimonial Area Start===========*/
+
+    .testimonial{
+        width: 100%;
+        height: 780px;
+        overflow: hidden;
+        background-color: #F8F9FA;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial .testimonialheader{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        animation: animate 1s ease-in-out;
+    }
+
+    @keyframes animate{
+        0%{
+            transform: translateY(200%);
+        }
+    }
+
+    .testimonial .testimonialheader button{
+        width: 120px;
+        height: 25px;
+        font-size: 12px;
+        color: orange;
+        outline:none;
+        border: 1px solid #FEF0DA;
+        background-color: #FEF0DA;
+        border-radius: 50px;
+    }
+
+    .testimonial .testimonialheader h1{
+        font-size: 30px;
+        margin-top:10px;
+        margin-bottom: 15px;
+    }
+
+    .testimonial .testimonialheader p{
+        text-align: center;
+        font-size: 14px;
+        line-height: 21px;
+        width: 70%;
+        color:rgba(0, 0, 0, 0.6)
+    }
+
+    .testimonial .container {
+        display: flex;
+        overflow: hidden;
+        padding-bottom:50px;
+        width: 490px;
+        animation: animate 1s ease-in-out;
+    }
+
+    @keyframes animate{
+        0%{
+            transform: translateY(200%);
+        }
+    }
+
+    .testimonial .container .allperson{
+        display: flex;
+        animation: slide 30s infinite alternate; 
+    }
+
+    @keyframes slide{
+        0%{
+            transform: translateX(0);
+        }
+        12%{
+            transform: translateX(0);
+        }
+        15%{
+            transform: translateX(-480px);
+        }
+        27%{
+            transform: translateX(-480px);
+        }
+        30%{
+            transform: translateX(-960px);
+        }
+        42%{
+            transform: translateX(-960px);
+        }
+        45%{
+            transform: translateX(-1440px);
+        }
+        57%{
+            transform: translateX(-1440px);
+        }
+        61%{
+            transform: translateX(-1920px);
+        }
+        73%{
+            transform: translateX(-1920px);
+        }
+        75%{
+            transform: translateX(-2400px);
+        }
+        87%{
+            transform: translateX(-2400px);
+        }
+        89%{
+            transform: translateX(-2880px);
+        }
+        100%{
+            transform: translateX(-2880px);
+        }
+
+    }
+
+    .testimonial .container .allperson .person{
+        margin-left: 10px;
+        width: 470px;
+        height: 270px;
+        background-color: #fff;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        transition: 0.3s;
+    }
+
+    .testimonial .container .allperson .person:hover{
+        border: 1px solid black;
+    }
+
+    .testimonial .container .allperson .person .persontext{
+        padding-top: 50px;
+        padding-left: 30px;
+    }
+
+    .testimonial .container .allperson .person .persontext p{
+        width:85% ;
+        font-size: 17px;
+        line-height: 27px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .testimonial .container .allperson .person .persondetails{
+        display: flex;
+        padding-left: 30px;
+        padding-top: 40px;
+    }
+
+    .testimonial .container .allperson .person .persondetails .personimg{
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 20px;
+    }
+
+    .testimonial .container .allperson .person .persondetails .personimg img{
+        height: 40px;
+    }
+
+    .testimonial .container .allperson .person .persondetails .personname p{
+        color: rgba(0, 0, 0, 0.6);
+        line-height: 22px;
+        width: 150px;
+    }
+
+
+    .testimonial .container input{
+        position:absolute ;
+        margin-top: 300px;
+        margin-left: 200px;
+        accent-color: black;
+    }
+
+    .testimonial .container input:nth-child(2){
+        position:absolute ;
+        margin-left: 240px;
+    }
+
+    .testimonial .container input:nth-child(3){
+        position:absolute ;
+        margin-left: 280px;
+    }
+
+    /*============Testimonial Area End===============*/
+
+                
+    /*===================Fotter Area Start==============*/
+
+    footer{
+        width: 100%;
+        height: 1150px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    footer .container{
+        display: flex;
+        flex-wrap:wrap;
+        padding-top: 100px;
+    }
+
+    footer .container .footer h5{
+        margin-bottom: 30px;
+    }
+
+    footer .container .footer{
+        padding-left: 100px;
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    footer .container .footer1 p{
+        font-size: 14px;
+        line-height: 25px;
+        width: 350px;
+        margin-bottom: 10px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    footer .container .footer1 .footericon a{
+        text-decoration: none;
+        color: black;
+    }
+
+    footer .container .footer1 .footericon i{
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        padding-left: 10px;
+        margin-top: 20px;
+    }
+
+
+    footer .container .footer ul{
+        font-size: 14px;
+        line-height: 35px;
+        list-style: none;
+    }
+
+    footer .container .footer ul li a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    footer .container .footer ul li a:hover{
+        transition: 0.3s;
+        color: black;
+    }
+
+    footer .container .footer ul li i{
+        padding-right: 15px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    footer .footerend {
+        position: absolute;
+        bottom: 100px;
+        justify-content: center;
+        display: flex;
+    }
+
+    footer .footerend a{
+        text-decoration: none;
+        color: red;
+        font-weight: bold;
+    }
+
+    footer .footerend a:hover{
+        transition: 0.3s;
+        color: blue;
+    }
+
+    footer .footerend p{
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 14px;
+        line-height: 25px;
+        width: 80%;
+    }
+
+
+    /*================Footer Area End============*/
+
+
+}
+
+
+
+
+
+
+/*===================Responsive For 480 px Start============*/
+
+@media (max-width: 480px){
+
+    
+    /*==================Hero Area Start===============*/
+
+    .hero{
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 80px;
+        justify-content: center;
+        margin-left: 10%;
+    }
+
+    .hero .container .textarea h1{
+        font-size: 1.5rem;
+        font-weight: bold;
+        width:60%;
+        margin-bottom: 20px;
+        margin-top:10px;
+    }
+
+
+    .hero .container .textarea P{
+        width: 300px;
+        line-height: 23px;
+        font-size: 15px;
+        margin-bottom: 45px;
+        color: rgba(0, 0, 0, 0.6)
+    }
+    .hero .container .heroimg img{
+        height: 250px;
+    }
+
+    /*================ Hero Area End ========================*/
+
+    
+    /* ===================Features Area Start ==================== */
+
+    .featuresarea{
+        width: 100%;
+        padding-top: 125px;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .featuresarea .featureheader h1{
+        font-size: 1.7rem;
+    }
+
+    .featuresarea .featureheader p{
+        width: 70%;
+    }
+
+    .featuresarea .allfeatures{
+        display: block;
+        overflow: hidden;
+    }
+
+    .featuresarea .allfeatures .feature .iconbg{
+        position: absolute;
+        background-color: orange;
+        margin-left: -80px;
+        bottom: 12px;
+        opacity: 0.5;
+    }
+
+    .featuresarea .allfeatures .feature p{
+        width: 70%;
+    }
+
+    .featuresarea .allfeatures .feature{
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+
+    /*=============== Feature Area End ==================*/
+
+    
+    /*================= About Us Aea Start ===================== */
+
+
+    .aboutus{
+        width: 100%;
+        padding-top: 200px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+
+    .aboutus .container{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+
+    .aboutus .container .aboutusimg {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 30px;
+    }
+
+    .aboutus .container .aboutusimg img{
+        height:250px;
+        padding-left: 0;
+        padding-right: 10px;
+        padding-bottom: 50px;
+    }
+ 
+    .aboutus .container .aboutustext h1{
+        font-size: 25px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .aboutus .container{
+        margin-left: -10%;
+    }
+
+    .aboutus .container .aboutustext p{
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        width: 350px;
+        line-height:22px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+
+    /*===================about US Area End=================*/
+
+
+    /*==============Service Area Start================*/
+
+    .servicearea{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 150px;
+    }
+
+    .servicearea .serviceheader{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .servicearea .serviceheader h1{
+        font-size: 35px;
+        margin-top: 10px;
+    }
+
+    .servicearea .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+        column-gap: 30px;
+        overflow: hidden;
+    }
+
+    .servicearea .container .column .service{
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #EFEFEF;
+        height: 230px;
+        width: 350px;
+        align-items: center;
+        position: relative;
+        margin-top:30px
+    }
+
+    .servicearea .container .column .service .serviceicon{
+        padding-right: 10px;
+        position: relative;
+        top: 0px;
+        left: 20px;
+    }
+
+    .servicearea .container .column .service .serviceicon i{
+        font-size: 50px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .servicearea .container .column .service .serviceicon .iconbg{
+        width: 50px;
+        height: 50px;
+        background-color: orange;
+        position: absolute;
+        border-radius: 50%;
+        top: -23px;
+        opacity:0.5;
+    }
+
+    .servicearea .container .column .service .servicetext {
+        margin-left: 50px;
+    }
+
+    .servicearea .container .column .service .servicetext h3{
+        font-size: 16px ;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+
+    .servicearea .container .column .service .servicetext p{
+        font-size: 14px ;
+        line-height: 21px;
+        width: 80%;
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+    /*==================Service Area End===========*/
+
+
+        
+    /*===============Testimonial Area Start===========*/
+
+    .testimonial{
+        width: 100%;
+        height: 780px;
+        overflow: hidden;
+        background-color: #F8F9FA;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial .testimonialheader{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        animation: animate 1s ease-in-out;
+    }
+
+    @keyframes animate{
+        0%{
+            transform: translateY(200%);
+        }
+    }
+
+    .testimonial .testimonialheader button{
+        width: 120px;
+        height: 25px;
+        font-size: 12px;
+        color: orange;
+        outline:none;
+        border: 1px solid #FEF0DA;
+        background-color: #FEF0DA;
+        border-radius: 50px;
+    }
+
+    .testimonial .testimonialheader h1{
+        font-size: 30px;
+        margin-top:10px;
+        margin-bottom: 15px;
+    }
+
+    .testimonial .testimonialheader p{
+        text-align: center;
+        font-size: 14px;
+        line-height: 21px;
+        width: 70%;
+        color:rgba(0, 0, 0, 0.6)
+    }
+
+    .testimonial .container {
+        display: flex;
+        overflow: hidden;
+        padding-bottom:50px;
+        width: 310px;
+        animation: animate 1s ease-in-out;
+    }
+
+    @keyframes animate{
+        0%{
+            transform: translateY(200%);
+        }
+    }
+
+    .testimonial .container .allperson{
+        display: flex;
+        animation: slide 25s infinite alternate; 
+    }
+
+    @keyframes slide{
+        0%{
+            transform: translateX(0);
+        }
+        12%{
+            transform: translateX(0);
+        }
+        15%{
+            transform: translateX(-310px);
+        }
+        27%{
+            transform: translateX(-310px);
+        }
+        30%{
+            transform: translateX(-620px);
+        }
+        42%{
+            transform: translateX(-620px);
+        }
+        45%{
+            transform: translateX(-930px);
+        }
+        57%{
+            transform: translateX(-930px);
+        }
+        61%{
+            transform: translateX(-1240px);
+        }
+        73%{
+            transform: translateX(-1240px);
+        }
+        75%{
+            transform: translateX(-1550px);
+        }
+        87%{
+            transform: translateX(-1550px);
+        }
+        89%{
+            transform: translateX(-1860px);
+        }
+        100%{
+            transform: translateX(-1860px);
+        }
+
+    }
+
+    .testimonial .container .allperson .person{
+        margin-left: 10px;
+        width: 300px;
+        height: 350px;
+        background-color: #fff;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        transition: 0.3s;
+    }
+
+    .testimonial .container .allperson .person:hover{
+        border: 1px solid black;
+    }
+
+    .testimonial .container .allperson .person .persontext{
+        padding-top: 50px;
+        padding-left: 30px;
+    }
+
+    .testimonial .container .allperson .person .persontext p{
+        width:85% ;
+        font-size: 17px;
+        line-height: 27px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .testimonial .container .allperson .person .persondetails{
+        display: flex;
+        padding-left: 30px;
+        padding-top: 40px;
+    }
+
+    .testimonial .container .allperson .person .persondetails .personimg{
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 20px;
+    }
+
+    .testimonial .container .allperson .person .persondetails .personimg img{
+        height: 40px;
+    }
+
+    .testimonial .container .allperson .person .persondetails .personname p{
+        color: rgba(0, 0, 0, 0.6);
+        line-height: 22px;
+        width: 150px;
+    }
+
+
+    .testimonial .container input{
+        position:absolute ;
+        margin-top: 300px;
+        margin-left: 200px;
+        accent-color: black;
+    }
+
+    .testimonial .container input:nth-child(2){
+        position:absolute ;
+        margin-left: 240px;
+    }
+
+    .testimonial .container input:nth-child(3){
+        position:absolute ;
+        margin-left: 280px;
+    }
+
+    /*============Testimonial Area End===============*/
+
+                
+    /*===================Fotter Area Start==============*/
+
+    footer{
+        width: 100%;
+        height: 1150px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    footer .container{
+        display: flex;
+        flex-wrap:wrap;
+        padding-top: 100px;
+    }
+
+    footer .container .footer h5{
+        margin-bottom: 30px;
+    }
+
+    footer .container .footer{
+        padding-left: 100px;
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    footer .container .footer1 p{
+        font-size: 14px;
+        line-height: 25px;
+        width: 350px;
+        margin-bottom: 10px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    footer .container .footer1 .footericon a{
+        text-decoration: none;
+        color: black;
+    }
+
+    footer .container .footer1 .footericon i{
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        padding-left: 10px;
+        margin-top: 20px;
+    }
+
+
+    footer .container .footer ul{
+        font-size: 14px;
+        line-height: 35px;
+        list-style: none;
+    }
+
+    footer .container .footer ul li a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    footer .container .footer ul li a:hover{
+        transition: 0.3s;
+        color: black;
+    }
+
+    footer .container .footer ul li i{
+        padding-right: 15px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    footer .footerend {
+        position: absolute;
+        bottom: 100px;
+        justify-content: center;
+        display: flex;
+    }
+
+    footer .footerend a{
+        text-decoration: none;
+        color: red;
+        font-weight: bold;
+    }
+
+    footer .footerend a:hover{
+        transition: 0.3s;
+        color: blue;
+    }
+
+    footer .footerend p{
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 14px;
+        line-height: 25px;
+        width: 80%;
+    }
+
+
+    /*================Footer Area End============*/
+
+}
+
+
+
+/*===================Responsive For 414 px Start============*/
+
+@media (max-width: 414px){
+
+    
+    /*==================Hero Area Start===============*/
+
+    .hero{
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 80px;
+        justify-content: center;
+        margin-left: 10%;
+    }
+
+    .hero .container .textarea h1{
+        font-size: 1.5rem;
+        font-weight: bold;
+        width:60%;
+        margin-bottom: 20px;
+        margin-top:10px;
+    }
+
+    .hero .container .textarea .button {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero .container .textarea .button button{
+        margin-top: 15px;
+    }
+
+
+    .hero .container .textarea P{
+        width: 300px;
+        line-height: 23px;
+        font-size: 15px;
+        margin-bottom: 45px;
+        color: rgba(0, 0, 0, 0.6)
+    }
+    .hero .container .heroimg img{
+        height: 200px;
+    }
+
+    /*================ Hero Area End ========================*/
+
+    
+    /* ===================Features Area Start ==================== */
+
+    .featuresarea{
+        width: 100%;
+        padding-top: 125px;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .featuresarea .featureheader h1{
+        font-size: 1.7rem;
+    }
+
+    .featuresarea .featureheader p{
+        width: 70%;
+    }
+
+    .featuresarea .allfeatures{
+        display: block;
+        overflow: hidden;
+    }
+
+    .featuresarea .allfeatures .feature .iconbg{
+        position: absolute;
+        background-color: orange;
+        margin-left: -80px;
+        bottom: 12px;
+        opacity: 0.5;
+    }
+
+    .featuresarea .allfeatures .feature p{
+        width: 70%;
+    }
+
+    .featuresarea .allfeatures .feature{
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+
+    /*=============== Feature Area End ==================*/
+
+    
+    /*================= About Us Aea Start ===================== */
+
+
+    .aboutus{
+        width: 100%;
+        padding-top: 200px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+
+    .aboutus .container{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+
+    .aboutus .container .aboutusimg {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 30px;
+    }
+
+    .aboutus .container .aboutusimg img{
+        height:200px;
+        padding-left: 0;
+        padding-right: 10px;
+        padding-bottom: 50px;
+    }
+ 
+    .aboutus .container .aboutustext h1{
+        font-size: 25px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .aboutus .container{
+        margin-left: -10%;
+    }
+
+    .aboutus .container .aboutustext p{
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        width: 270px;
+        line-height:22px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+
+    /*===================about US Area End=================*/
+
+
+    /*==============Service Area Start================*/
+
+    .servicearea{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 150px;
+    }
+
+    .servicearea .serviceheader{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .servicearea .serviceheader h1{
+        font-size: 35px;
+        margin-top: 10px;
+    }
+
+    .servicearea .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+        column-gap: 0px;
+        overflow: hidden;
+    }
+
+    .servicearea .container .column .service{
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #EFEFEF;
+        height: 300px;
+        width: 270px;
+        align-items: center;
+        position: relative;
+        margin-top:30px
+    }
+
+    .servicearea .container .column .service .serviceicon{
+        padding-right: 10px;
+        position: relative;
+        top: 0px;
+        left: 20px;
+        display: none;
+    }
+
+    .servicearea .container .column .service .serviceicon i{
+        font-size: 50px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .servicearea .container .column .service .serviceicon .iconbg{
+        width: 50px;
+        height: 50px;
+        background-color: orange;
+        position: absolute;
+        border-radius: 50%;
+        top: -23px;
+        opacity:0.5;
+    }
+
+    .servicearea .container .column .service .servicetext {
+        margin-left: 50px;
+    }
+
+    .servicearea .container .column .service .servicetext h3{
+        font-size: 16px ;
+        padding-bottom: 10px;
+        width: 80%;
+    }
+
+    .servicearea .container .column .service .servicetext p{
+        font-size: 14px ;
+        line-height: 21px;
+        width: 80%;
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+    /*==================Service Area End===========*/
+
+
+        
+    /*===============Testimonial Area Start===========*/
+
+    .testimonial{
+        width: 100%;
+        height: 900px;
+        overflow: hidden;
+        background-color: #F8F9FA;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial .testimonialheader{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        animation: animate 1s ease-in-out;
+    }
+
+    @keyframes animate{
+        0%{
+            transform: translateY(200%);
+        }
+    }
+
+    .testimonial .testimonialheader button{
+        width: 120px;
+        height: 25px;
+        font-size: 12px;
+        color: orange;
+        outline:none;
+        border: 1px solid #FEF0DA;
+        background-color: #FEF0DA;
+        border-radius: 50px;
+    }
+
+    .testimonial .testimonialheader h1{
+        font-size: 30px;
+        margin-top:10px;
+        margin-bottom: 15px;
+    }
+
+    .testimonial .testimonialheader p{
+        text-align: center;
+        font-size: 14px;
+        line-height: 21px;
+        width: 70%;
+        color:rgba(0, 0, 0, 0.6)
+    }
+
+    .testimonial .container {
+        display: flex;
+        overflow: hidden;
+        padding-bottom:50px;
+        width: 310px;
+        animation: animate 1s ease-in-out;
+    }
+
+    @keyframes animate{
+        0%{
+            transform: translateY(200%);
+        }
+    }
+
+    .testimonial .container .allperson{
+        display: flex;
+        animation: slide 25s infinite alternate; 
+    }
+
+    @keyframes slide{
+        0%{
+            transform: translateX(0);
+        }
+        12%{
+            transform: translateX(0);
+        }
+        15%{
+            transform: translateX(-310px);
+        }
+        27%{
+            transform: translateX(-310px);
+        }
+        30%{
+            transform: translateX(-620px);
+        }
+        42%{
+            transform: translateX(-620px);
+        }
+        45%{
+            transform: translateX(-930px);
+        }
+        57%{
+            transform: translateX(-930px);
+        }
+        61%{
+            transform: translateX(-1240px);
+        }
+        73%{
+            transform: translateX(-1240px);
+        }
+        75%{
+            transform: translateX(-1550px);
+        }
+        87%{
+            transform: translateX(-1550px);
+        }
+        89%{
+            transform: translateX(-1860px);
+        }
+        100%{
+            transform: translateX(-1860px);
+        }
+
+    }
+
+    .testimonial .container .allperson .person{
+        margin-left: 10px;
+        width: 300px;
+        height: 350px;
+        background-color: #fff;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        transition: 0.3s;
+    }
+
+    .testimonial .container .allperson .person:hover{
+        border: 1px solid black;
+    }
+
+    .testimonial .container .allperson .person .persontext{
+        padding-top: 50px;
+        padding-left: 30px;
+    }
+
+    .testimonial .container .allperson .person .persontext p{
+        width:85% ;
+        font-size: 17px;
+        line-height: 27px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .testimonial .container .allperson .person .persondetails{
+        display: flex;
+        padding-left: 30px;
+        padding-top: 40px;
+    }
+
+    .testimonial .container .allperson .person .persondetails .personimg{
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 20px;
+    }
+
+    .testimonial .container .allperson .person .persondetails .personimg img{
+        height: 40px;
+    }
+
+    .testimonial .container .allperson .person .persondetails .personname p{
+        color: rgba(0, 0, 0, 0.6);
+        line-height: 22px;
+        width: 150px;
+    }
+
+
+    .testimonial .container input{
+        position:absolute ;
+        margin-top: 300px;
+        margin-left: 200px;
+        accent-color: black;
+    }
+
+    .testimonial .container input:nth-child(2){
+        position:absolute ;
+        margin-left: 240px;
+    }
+
+    .testimonial .container input:nth-child(3){
+        position:absolute ;
+        margin-left: 280px;
+    }
+
+    /*============Testimonial Area End===============*/
+
+                
+    /*===================Fotter Area Start==============*/
+
+    footer{
+        width: 100%;
+        height: 1150px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    footer .container{
+        display: flex;
+        flex-wrap:wrap;
+        padding-top: 100px;
+    }
+
+    footer .container .footer h5{
+        margin-bottom: 30px;
+    }
+
+    footer .container .footer{
+        padding-left: 50px;
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    footer .container .footer p{
+        font-size: 14px;
+        line-height: 25px;
+        width: 70%;
+        margin-bottom: 10px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+
+    footer .container .footer1 .footericon a{
+        text-decoration: none;
+        color: black;
+    }
+
+    footer .container .footer1 .footericon i{
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        padding-left: 10px;
+        margin-top: 20px;
+    }
+
+
+    footer .container .footer ul{
+        font-size: 14px;
+        line-height: 35px;
+        list-style: none;
+    }
+
+    footer .container .footer ul li a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    footer .container .footer ul li a:hover{
+        transition: 0.3s;
+        color: black;
+    }
+
+    footer .container .footer ul li i{
+        padding-right: 15px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    footer .footerend {
+        position: absolute;
+        bottom: 100px;
+        justify-content: center;
+        display: flex;
+    }
+
+    footer .footerend a{
+        text-decoration: none;
+        color: red;
+        font-weight: bold;
+    }
+
+    footer .footerend a:hover{
+        transition: 0.3s;
+        color: blue;
+    }
+
+    footer .footerend p{
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 14px;
+        line-height: 25px;
+        width: 80%;
+    }
+
+
+    /*================Footer Area End============*/
+
+}
+
+
+
+/*===================Responsive For 320 px Start============*/
+
+@media (max-width: 390px){
+
+    
+
+    html, body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    header nav{
+        margin-top: -20px;
+        padding-top: 50px;
+        font-size: 15px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-left: 250%;
+        position: absolute;
+        box-sizing: border-box;
+        box-shadow: -5px -5px 10px 5px rgba(0, 0, 0, 0.3);
+        height: 100vh;
+        position: fixed;
+        background-color: white;
+        transition: 0.5s;
+    }
+
+
+    
+    /*==================Hero Area Start===============*/
+
+    .hero{
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 80px;
+        justify-content: center;
+        margin-left: 15%;
+    }
+
+    .hero .container .textarea h1{
+        font-size: 1.5rem;
+        font-weight: bold;
+        width:60%;
+        margin-bottom: 20px;
+        margin-top:10px;
+    }
+
+    .hero .container .textarea .button {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero .container .textarea .button button{
+        margin-top: 15px;
+    }
+
+
+    .hero .container .textarea P{
+        width: 250px;
+        line-height: 23px;
+        font-size: 15px;
+        margin-bottom: 45px;
+        color: rgba(0, 0, 0, 0.6)
+    }
+    .hero .container .heroimg img{
+        height: 170px;
+    }
+
+    /*================ Hero Area End ========================*/
+
+    
+    /* ===================Features Area Start ==================== */
+
+    .featuresarea{
+        width: 100%;
+        padding-top: 125px;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .featuresarea .featureheader h1{
+        font-size: 1.7rem;
+    }
+
+    .featuresarea .featureheader p{
+        width: 65%;
+    }
+
+    .featuresarea .allfeatures{
+        display: block;
+        overflow: hidden;
+    }
+
+    .featuresarea .allfeatures .feature .iconbg{
+        position: absolute;
+        background-color: orange;
+        margin-left: -80px;
+        bottom: 12px;
+        opacity: 0.5;
+    }
+
+    .featuresarea .allfeatures .feature p{
+        width: 65%;
+    }
+
+    .featuresarea .allfeatures .feature{
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+
+    /*=============== Feature Area End ==================*/
+
+    
+    /*================= About Us Aea Start ===================== */
+
+
+    .aboutus{
+        width: 100%;
+        padding-top: 200px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+
+    .aboutus .container{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+
+    .aboutus .container .aboutusimg {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 30px;
+    }
+
+    .aboutus .container .aboutusimg img{
+        height:170px;
+        padding-left: 0;
+        padding-right: 10px;
+        padding-bottom: 50px;
+    }
+ 
+    .aboutus .container .aboutustext h1{
+        font-size: 23px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .aboutus .container{
+        margin-left: -5%;
+    }
+
+    .aboutus .container .aboutustext p{
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        width: 240px;
+        line-height:22px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .aboutus .container .aboutustext ul li{
+        width: 90%;
+    }
+
+
+    /*===================about US Area End=================*/
+
+
+    /*==============Service Area Start================*/
+
+    .servicearea{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 150px;
+    }
+
+    .servicearea .serviceheader{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .servicearea .serviceheader h1{
+        font-size: 35px;
+        margin-top: 10px;
+    }
+
+    .servicearea .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+        column-gap: 0px;
+        overflow: hidden;
+    }
+
+    .servicearea .container .column .service{
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #EFEFEF;
+        height: 300px;
+        width: 250px;
+        align-items: center;
+        position: relative;
+        margin-top:30px
+    }
+
+    .servicearea .container .column .service .serviceicon{
+        padding-right: 10px;
+        position: relative;
+        top: 0px;
+        left: 20px;
+        display: none;
+    }
+
+    .servicearea .container .column .service .serviceicon i{
+        font-size: 50px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .servicearea .container .column .service .serviceicon .iconbg{
+        width: 50px;
+        height: 50px;
+        background-color: orange;
+        position: absolute;
+        border-radius: 50%;
+        top: -23px;
+        opacity:0.5;
+    }
+
+    .servicearea .container .column .service .servicetext {
+        margin-left: 50px;
+    }
+
+    .servicearea .container .column .service .servicetext h3{
+        font-size: 16px ;
+        padding-bottom: 10px;
+        width: 80%;
+    }
+
+    .servicearea .container .column .service .servicetext p{
+        font-size: 14px ;
+        line-height: 21px;
+        width: 80%;
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+    /*==================Service Area End===========*/
+
+
+        
+    /*===============Testimonial Area Start===========*/
+
+    .testimonial{
+        width: 100%;
+        height: 900px;
+        overflow: hidden;
+        background-color: #F8F9FA;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial .testimonialheader{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        animation: animate 1s ease-in-out;
+    }
+
+    @keyframes animate{
+        0%{
+            transform: translateY(200%);
+        }
+    }
+
+    .testimonial .testimonialheader button{
+        width: 120px;
+        height: 25px;
+        font-size: 12px;
+        color: orange;
+        outline:none;
+        border: 1px solid #FEF0DA;
+        background-color: #FEF0DA;
+        border-radius: 50px;
+    }
+
+    .testimonial .testimonialheader h1{
+        font-size: 30px;
+        margin-top:10px;
+        margin-bottom: 15px;
+    }
+
+    .testimonial .testimonialheader p{
+        text-align: center;
+        font-size: 14px;
+        line-height: 21px;
+        width: 70%;
+        color:rgba(0, 0, 0, 0.6)
+    }
+
+    .testimonial .container {
+        display: flex;
+        overflow: hidden;
+        padding-bottom:50px;
+        width: 290px;
+        animation: animate 1s ease-in-out;
+    }
+
+    @keyframes animate{
+        0%{
+            transform: translateY(200%);
+        }
+    }
+
+    .testimonial .container .allperson{
+        display: flex;
+        animation: slide 30s infinite alternate; 
+    }
+
+    @keyframes slide{
+        0%{
+            transform: translateX(0);
+        }
+        12%{
+            transform: translateX(0);
+        }
+        15%{
+            transform: translateX(-290px);
+        }
+        27%{
+            transform: translateX(-290px);
+        }
+        30%{
+            transform: translateX(-580px);
+        }
+        42%{
+            transform: translateX(-580px);
+        }
+        45%{
+            transform: translateX(-870px);
+        }
+        57%{
+            transform: translateX(-870px);
+        }
+        61%{
+            transform: translateX(-1160px);
+        }
+        73%{
+            transform: translateX(-1160px);
+        }
+        75%{
+            transform: translateX(-1450px);
+        }
+        87%{
+            transform: translateX(-1450px);
+        }
+        89%{
+            transform: translateX(-1740px);
+        }
+        100%{
+            transform: translateX(-1740px);
+        }
+
+    }
+
+    .testimonial .container .allperson .person{
+        margin-left: 10px;
+        width: 280px;
+        height: 350px;
+        background-color: #fff;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        transition: 0.3s;
+    }
+
+    .testimonial .container .allperson .person:hover{
+        border: 1px solid black;
+    }
+
+    .testimonial .container .allperson .person .persontext{
+        padding-top: 50px;
+        padding-left: 30px;
+    }
+
+    .testimonial .container .allperson .person .persontext p{
+        width:85% ;
+        font-size: 17px;
+        line-height: 27px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .testimonial .container .allperson .person .persondetails{
+        display: flex;
+        padding-left: 30px;
+        padding-top: 40px;
+    }
+
+    .testimonial .container .allperson .person .persondetails .personimg{
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 20px;
+    }
+
+    .testimonial .container .allperson .person .persondetails .personimg img{
+        height: 40px;
+    }
+
+    .testimonial .container .allperson .person .persondetails .personname p{
+        color: rgba(0, 0, 0, 0.6);
+        line-height: 22px;
+        width: 150px;
+    }
+
+
+    .testimonial .container input{
+        position:absolute ;
+        margin-top: 300px;
+        margin-left: 200px;
+        accent-color: black;
+    }
+
+    .testimonial .container input:nth-child(2){
+        position:absolute ;
+        margin-left: 240px;
+    }
+
+    .testimonial .container input:nth-child(3){
+        position:absolute ;
+        margin-left: 280px;
+    }
+
+    /*============Testimonial Area End===============*/
+
+                
+    /*===================Fotter Area Start==============*/
+
+    footer{
+        width: 100%;
+        height: 1150px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    footer .container{
+        display: flex;
+        flex-wrap:wrap;
+        padding-top: 100px;
+    }
+
+    footer .container .footer h5{
+        margin-bottom: 30px;
+    }
+
+    footer .container .footer{
+        padding-left: 50px;
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    footer .container .footer p{
+        font-size: 14px;
+        line-height: 25px;
+        width: 70%;
+        margin-bottom: 10px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+
+    footer .container .footer1 .footericon a{
+        text-decoration: none;
+        color: black;
+    }
+
+    footer .container .footer1 .footericon i{
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        padding-left: 10px;
+        margin-top: 20px;
+    }
+
+
+    footer .container .footer ul{
+        font-size: 14px;
+        line-height: 35px;
+        list-style: none;
+    }
+
+    footer .container .footer ul li a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    footer .container .footer ul li a:hover{
+        transition: 0.3s;
+        color: black;
+    }
+
+    footer .container .footer ul li i{
+        padding-right: 15px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    footer .footerend {
+        position: absolute;
+        bottom: 20px;
+        justify-content: center;
+        display: flex;
+    }
+
+    footer .footerend a{
+        text-decoration: none;
+        color: red;
+        font-weight: bold;
+    }
+
+    footer .footerend a:hover{
+        transition: 0.3s;
+        color: blue;
+    }
+
+    footer .footerend p{
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 14px;
+        line-height: 25px;
+        width: 80%;
+    }
+
+
+    /*================Footer Area End============*/
+
+}
