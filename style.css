@@ -1300,7 +1300,7 @@ footer .footerend p{
         position: fixed;
         background-color: white;
         transition: 0.5s;
-        z-index: 10;
+        z-index: 100;
     }
     
     /*============Drop down start=============*/
