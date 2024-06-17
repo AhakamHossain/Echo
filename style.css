@@ -1300,7 +1300,7 @@ footer .footerend p{
         position: fixed;
         background-color: white;
         transition: 0.5s;
-        z-index: 100;
+        z-index: 20;
     }
     
     /*============Drop down start=============*/
@@ -1374,7 +1374,7 @@ footer .footerend p{
         position: absolute;
         margin-left: 80%;
         margin-top: 5px;
-        z-index: 108;
+        z-index: 68;
         height: 40px;
         width: 40px;
         opacity: 0;
@@ -1390,7 +1390,7 @@ footer .footerend p{
         position: absolute;
         margin-left: 80%;
         margin-top: 5px;
-        z-index: 107;
+        z-index: 65;
         justify-content: space-between;
         overflow: hidden;
         position: fixed;
@@ -1401,30 +1401,30 @@ footer .footerend p{
         height: 2px;
         background-color: black;
         display: block;
-        z-index: 107;
+        z-index: 65;
     }
 
     header input[type="checkbox"]:hover ~ .menulines{
        transform: scale(0.8);
        transition: 0.3s;
-       z-index: 107;
+       z-index: 65;
     }
 
     header .menulines .line1{
         transform-origin: 0% 0%;
         transition: 0.5s;
-        z-index: 105;
+        z-index: 65;
     }
 
     header .menulines .line2{
         transition: 0.5s;
-        z-index: 107;
+        z-index: 65;
     }
 
     header .menulines .line3{
         transform-origin: 0% 100%;
         transition: 0.5s;
-        z-index: 107;
+        z-index: 65;
     }
 
     header input[type="checkbox"]:checked ~ .menulines .line1{
